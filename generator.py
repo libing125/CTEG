@@ -4,7 +4,7 @@ from config import Config
 from util import *
 from tensorflow.nn.rnn_cell import LSTMStateTuple
 from tensorflow.python.ops.rnn import bidirectional_dynamic_rnn
-from memory_wrapper import MemoryWrapperEnhanced, AttentionMemWrapper
+from memory_wrapper import AttentionMemWrapper
 from collections import defaultdict
 
 
