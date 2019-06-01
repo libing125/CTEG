@@ -109,7 +109,6 @@ class AttentionMemWrapper(RNNCell):
             query_processed = array_ops.expand_dims(self.query_layer(c_t), 1)
 
             scores = math_ops.reduce_sum(self.attention_v * math_ops.tanh(encoder_processed + query_processed), [2])
-            print(scores)
             alpha = nn_ops.softmax(scores, axis=1)
             output_hidden_size = self.encoder_outputs.shape[2].value
             alpha_tile = gen_array_ops.tile(array_ops.expand_dims(alpha, -1), [1, 1, output_hidden_size],

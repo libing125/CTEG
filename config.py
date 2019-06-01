@@ -14,55 +14,55 @@ class Config(object):
         "adv_path": "./zhihu_model/no_mem/adversarial/",
         "best": "./zhihu_model/no_mem/best/",
         "classifier_path": "./zhihu_model/classifier/",
-        "word_dict": "./data/zhihu/word_dict_zhihu.npy",
-        "pretrain_wv": "./data/zhihu/wv_tencent.npy",
-        "topic_list": "./data/zhihu/topic_list_100.pkl"
+        "word_dict": "./data/word_dict_zhihu.npy",
+        "pretrain_wv": "./data/wv_tencent.npy",
+        "topic_list": "./data/topic_list_100.pkl"
 
     }
 
     train_data_path_zhihu = [
         # "si_train":
-        "./data/zhihu/train_src.npy",
+        "./data/train_src.npy",
         # "sl_train":
-        "./data/zhihu/train_src_len.npy",
+        "./data/train_src_len.npy",
         # "s_lbl_train":
-        "./data/zhihu/train_src_lbl_oh.npy",
+        "./data/train_src_lbl_oh.npy",
         # "ti_train":
-        "./data/zhihu/train_tgt.npy",
+        "./data/train_tgt.npy",
         # "tl_train":
-        "./data/zhihu/train_tgt_len.npy",
+        "./data/train_tgt_len.npy",
         # memory
-        "./data/zhihu/train_mem_idx_tx_120.npy"
+        "./data/train_mem_idx_120_concept.npy"
     ]
 
     test_data_path_zhihu = [
         # "si_train":
-        "./data/zhihu/tst.src.npy",
+        "./data/tst.src.npy",
         # "sl_train":
-        "./data/zhihu/tst.src.len.npy",
+        "./data/tst.src.len.npy",
         # "s_lbl_train":
-        "./data/zhihu/tst.src.lbl.oh.npy",
+        "./data/tst.src.lbl.oh.npy",
         # "ti_train":
-        "./data/zhihu/tst.tgt.npy",
+        "./data/tst.tgt.npy",
         # "tl_train":
-        "./data/zhihu/tst.tgt.len.npy",
+        "./data/tst.tgt.len.npy",
         # memory
-        "./data/zhihu/tst.mem.idx.tx.120.npy"
+        "./data/tst.mem.idx.120.concept.npy"
     ]
 
     val_data_path_zhihu = [
         # "si_train":
-        "./data/zhihu/val.src.npy",
+        "./data/val.src.npy",
         # "sl_train":
-        "./data/zhihu/val.src.len.npy",
+        "./data/val.src.len.npy",
         # "s_lbl_train":
-        "./data/zhihu/val.src.lbl.oh.npy",
+        "./data/val.src.lbl.oh.npy",
         # "ti_train":
-        "./data/zhihu/val.tgt.npy",
+        "./data/val.tgt.npy",
         # "tl_train":
-        "./data/zhihu/val.tgt.len.npy",
+        "./data/val.tgt.len.npy",
         # memory
-        "./data/zhihu/val.mem.idx.tx.120.npy"
+        "./data/val.mem.idx.120.concept.npy"
     ]
 
     discriminator_config_zhihu = {
@@ -73,7 +73,7 @@ class Config(object):
         "l2_reg_lambda": 0.0,
         "batch_size": 256,
         "topic_num": 5,
-        "n_class": 101,  #  zhihu 101
+        "n_class": 101,  # zhihu 101
         # random setting, may need fine-tune
         "filter_sizes": [1, 2, 3, 4, 5, 10, 20, 50, 100],
         "num_filters": [128, 256, 256, 256, 256, 128, 128, 128, 256],
@@ -93,7 +93,7 @@ class Config(object):
         "filter_sizes": [1, 2, 3, 4, 5, 10, 20, 50, 100],
         "num_filters": [64, 128, 128, 128, 128, 64, 64, 64, 128],
         "label_smooth": 0.9,
-        "pretrain_wv_path": "./data/zhihu/wv_tencent.npy"
+        "pretrain_wv_path": "./data/wv_tencent.npy"
     }
 
     classifier_config_zhihu_cnn = {  # the classifier is not perform well
@@ -109,7 +109,7 @@ class Config(object):
         "filter_sizes": [3, 4, 5],
         "num_filters": [128, 128, 128],
         "label_smooth": 0.9,
-        "pretrain_wv_path": "./data/zhihu/wv_tencent.npy"
+        "pretrain_wv_path": "./data/wv_tencent.npy"
 
     }
 
@@ -129,5 +129,6 @@ class Config(object):
         "normal_std": 1,
         "learning_rate": 1e-3,
         "beam_width": 5,
-        "mem_num": 120
+        "mem_num": 120,
+        "attention_size": 128
     }
