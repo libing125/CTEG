@@ -7,7 +7,7 @@ from generator import Generator
 
 if __name__ == '__main__':
 
-    log_file = "pretrain_log_essay_concept.txt"
+    log_file = "log.txt"
     # set random seed for reproduce
     tf.set_random_seed(88)
     np.random.seed(88)
@@ -24,6 +24,7 @@ if __name__ == '__main__':
     print(len(vocab_dict))
     config_g["vocab_dict"] = vocab_dict
     config_g["pretrain_wv"] = np.load(training_config["pretrain_wv"])
+    # assert pre-train word embedding
     assert config_g["embedding_size"] == config_g["pretrain_wv"].shape[1]
 
     G = Generator(config_g)
