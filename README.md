@@ -1,5 +1,5 @@
 # CTEG
-Code for paper "Knowledgeable Writer: Enhancing Topic-to-Essay Generation with External Commonsense Knowledge "
+Code for ACL 2019 paper "Enhancing Topic-to-Essay Generation with External Commonsense Knowledge "
 
 ## Requirements
 - Python 3
