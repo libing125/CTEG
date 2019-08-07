@@ -1,5 +1,7 @@
 # CTEG
-Code for ACL 2019 paper "Enhancing Topic-to-Essay Generation with External Commonsense Knowledge ". Corresponding baselines canbe found at [MTA-LSTM]()
+Code for ACL 2019 paper "Enhancing Topic-to-Essay Generation with External Commonsense Knowledge ". 
+
+Corresponding codes of baselines can be found at [MTA-LSTM](https://github.com/TobiasLee/MTA-LSTM-TensorFlow)
 
 ## Requirements
 - Python 3
@@ -14,7 +16,7 @@ Data can be downloaded from [Baidu Cloud](https://pan.baidu.com/s/17pcfWUuQTbcbn
 1. Unzip the data and place it according to the path in `config.py`
 2. Run `python3 cteg.py`
 
-Feel free to contact [me](mailto:tobiaslee@foxmail.com) raise an issue if you meet any problems.
+Feel free to contact [me](mailto:tobiaslee@foxmail.com) or raise an issue if you meet any problems.
 
 ## Citation
 
