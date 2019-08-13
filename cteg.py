@@ -78,7 +78,7 @@ if __name__ == '__main__':
             f.write(log_data + "\n")
 
     # pre-train discriminator
-    d_pre_dataloader = DisDataLoader(sess, G, config_d["batch_size"], max_len=120, num_class=501,
+    d_pre_dataloader = DisDataLoader(sess, G, config_d["batch_size"], max_len=120, num_class=101,
                                      topic_input=si, topic_label=slbl, topic_len=sl, target_idx=ti, memory=train_mem)
     D = Discriminator(config_d)
     D.build_graph()
