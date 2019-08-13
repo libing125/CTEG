@@ -5,9 +5,9 @@ Corresponding codes of MTA baselines can be found at [MTA-LSTM](https://github.c
 
 ## Model
 
-![Overview](./imgs/model_overview.pdf)
+![Overview](./imgs/model_overview.png)
 
-![Model-detail](./imgs/model_detail.pdf)
+![Model-detail](./imgs/model_detail.png)
 
 
 
