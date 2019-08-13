@@ -1,9 +1,18 @@
-# CTEG
-Code for ACL 2019 paper "Enhancing Topic-to-Essay Generation with External Commonsense Knowledge ". 
+# CTEG 
+**C**ommonsense enhanced **T**opic-to-**E**ssay **G**eneration: code for ACL 2019 paper **"Enhancing Topic-to-Essay Generation with External Commonsense Knowledge"**. 
 
-Corresponding codes of baselines can be found at [MTA-LSTM](https://github.com/TobiasLee/MTA-LSTM-TensorFlow)
+Corresponding codes of MTA baselines can be found at [MTA-LSTM](https://github.com/TobiasLee/MTA-LSTM-TensorFlow).
+
+## Model
+
+![Overview](./imgs/model_overview.pdf)
+
+![Model-detail](./imgs/model_detail.pdf)
+
+
 
 ## Requirements
+
 - Python 3
 - TensorFlow >= 1.7
 
@@ -20,7 +29,7 @@ Feel free to contact [me](mailto:tobiaslee@foxmail.com) or raise an issue if you
 
 ## Citation
 
-If you use this code or the corresponding baseline code, it woule be nice if you can cite our paper:
+If you use this code or the corresponding baseline code, please kindly cite our paper:
 ```
 @inproceedings{yang2019enhancing,
   title={Enhancing Topic-to-Essay Generation with External Commonsense Knowledge},
